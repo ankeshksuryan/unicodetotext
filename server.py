@@ -5,10 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    tscii_text = "§Áø ÀÌ¾¢¨Â ºÚì¸¢ §Á¨ºÂ¢ø ¨Åì¸×õ."  # TSCII text
-    unicode_text = auto2unicode(tscii_text)
-    return unicode_text
-
+    return "Hello, World!"
 
 @app.route('/convert', methods=['POST'])
 def convert_text():
