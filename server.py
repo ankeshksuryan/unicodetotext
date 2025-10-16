@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # Example TSCII string
-    tscii_text = "இங்கே இரவு வெகுநேரம் ஆச்சு."  # If this is Unicode already, no need to convert
+    tscii_text = "§Áø ÀÌ¾¢¨Â ºÚì¸¢ §Á¨ºÂ¢ø ¨Åì¸×õ."  # If this is Unicode already, no need to convert
     # You should test with actual TSCII text like: "§Áø ÀÌ¾¢¨Â ºÚì¸¢ §Á¨ºÂ¢ø ¨Åì¸×õ."
     unicode_text = auto2unicode(tscii_text)
     return unicode_text
