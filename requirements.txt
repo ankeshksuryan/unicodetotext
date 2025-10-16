@@ -1,2 +1,2 @@
-flask==3.0.3
-open-tamil==1.1
+flask
+open-tamil
